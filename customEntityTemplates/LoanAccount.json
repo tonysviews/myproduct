@@ -1,0 +1,12 @@
+{
+  "code" : "LoanAccount",
+  "name" : "LoanAccount",
+  "description" : "LoanAccount",
+  "customEntityCategoryCode" : "productmanagement",
+  "availableStorages" : [ "SQL" ],
+  "sqlStorageConfiguration" : {
+    "storeAsTable" : true
+  },
+  "samples" : [ ],
+  "audited" : false
+}

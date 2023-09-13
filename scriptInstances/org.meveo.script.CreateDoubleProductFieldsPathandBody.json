@@ -1,0 +1,27 @@
+{
+  "code" : "org.meveo.script.CreateDoubleProductFieldsPathandBody",
+  "inputs" : [ {
+    "name" : "product",
+    "type" : "Product"
+  }, {
+    "name" : "loanaccountname",
+    "type" : "String"
+  }, {
+    "name" : "loanid",
+    "type" : "String"
+  }, {
+    "name" : "sanctionamount",
+    "type" : "Double"
+  } ],
+  "outputs" : [ {
+    "name" : "result",
+    "type" : "String"
+  } ],
+  "generateOutputs" : false,
+  "type" : "JAVA",
+  "transactionType" : "SAME",
+  "executionRoles" : [ ],
+  "sourcingRoles" : [ ],
+  "mavenDependencies" : [ ],
+  "importScriptInstances" : [ ]
+}

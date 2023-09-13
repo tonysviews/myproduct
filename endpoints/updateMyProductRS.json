@@ -1,0 +1,30 @@
+{
+  "code" : "updateMyProductRS",
+  "description" : "update a new productSS",
+  "secured" : false,
+  "checkPathParams" : false,
+  "serviceCode" : "org.meveo.script.UpdateMyProduct",
+  "synchronous" : true,
+  "method" : "PUT",
+  "parameterMappings" : [ {
+    "serviceParameter" : "product",
+    "multivalued" : false,
+    "parameterName" : "product",
+    "valueRequired" : true
+  }, {
+    "serviceParameter" : "uuid",
+    "multivalued" : false,
+    "parameterName" : "uuid",
+    "valueRequired" : true
+  } ],
+  "pathParameters" : [ ],
+  "roles" : [ ],
+  "returnedVariableName" : "result",
+  "serializeResult" : false,
+  "contentType" : "application/json",
+  "basePath" : "myproduct",
+  "path" : "/",
+  "pool" : {
+    "usePool" : false
+  }
+}

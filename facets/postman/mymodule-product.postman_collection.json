@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "7bf1efa1-7106-4e12-91d0-e9ca0da00a68",
+		"name": "mymodule-product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29352754"
+	},
+	"item": [
+		{
+			"name": "getMyProduct",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/myproduct/api/myproduct/158",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myproduct",
+						"api",
+						"myproduct",
+						"158"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n   \r\n        \"product\":\r\n        { \r\n             \"uuid\":\"158\",\r\n            \"proid\": \"102\",\r\n            \"proname\": \"Northern university mymodule\",\r\n            \"proprice\": \"612\"\r\n\t   \r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/myproduct/api/myproduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myproduct",
+						"api",
+						"myproduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteMyProduct",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/myproduct/api/myproduct/158",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myproduct",
+						"api",
+						"myproduct",
+						"158"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update product",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n   \r\n        \"product\":\r\n        { \r\n             \"uuid\":\"158\",\r\n            \"proid\": \"102\",\r\n            \"proname\": \"Northern university mymodule edit\",\r\n            \"proprice\": \"612eee\"\r\n\t   \r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/myproduct/api/myproduct/158",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myproduct",
+						"api",
+						"myproduct",
+						"158"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

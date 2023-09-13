@@ -1,0 +1,20 @@
+{
+  "code" : "GetProductRS",
+  "description" : "Get a Product",
+  "secured" : false,
+  "checkPathParams" : false,
+  "serviceCode" : "org.meveo.script.GetMyProduct",
+  "synchronous" : true,
+  "method" : "GET",
+  "parameterMappings" : [ ],
+  "pathParameters" : [ "uuid" ],
+  "roles" : [ ],
+  "returnedVariableName" : "result",
+  "serializeResult" : false,
+  "contentType" : "application/json",
+  "basePath" : "myproduct",
+  "path" : "/{uuid}",
+  "pool" : {
+    "usePool" : false
+  }
+}

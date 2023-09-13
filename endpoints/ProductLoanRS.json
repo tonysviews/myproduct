@@ -1,0 +1,30 @@
+{
+  "code" : "ProductLoanRS",
+  "description" : "Test two entity",
+  "secured" : false,
+  "checkPathParams" : false,
+  "serviceCode" : "org.meveo.script.CreateDoubleProductLoanAccount",
+  "synchronous" : true,
+  "method" : "POST",
+  "parameterMappings" : [ {
+    "serviceParameter" : "loanaccount",
+    "multivalued" : false,
+    "parameterName" : "loanaccount",
+    "valueRequired" : false
+  }, {
+    "serviceParameter" : "product",
+    "multivalued" : false,
+    "parameterName" : "product",
+    "valueRequired" : false
+  } ],
+  "pathParameters" : [ ],
+  "roles" : [ ],
+  "returnedVariableName" : "result",
+  "serializeResult" : false,
+  "contentType" : "application/json",
+  "basePath" : "myproduct_1",
+  "path" : "/",
+  "pool" : {
+    "usePool" : false
+  }
+}

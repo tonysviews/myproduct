@@ -1,0 +1,35 @@
+{
+  "code" : "DoubleProductFieldsPathandBody",
+  "description" : "Create Double  ProductFields   Path and Body",
+  "secured" : false,
+  "checkPathParams" : false,
+  "serviceCode" : "org.meveo.script.CreateDoubleProductFieldsPathandBody",
+  "synchronous" : true,
+  "method" : "POST",
+  "parameterMappings" : [ {
+    "serviceParameter" : "loanaccountname",
+    "multivalued" : false,
+    "parameterName" : "loanaccountname",
+    "valueRequired" : true
+  }, {
+    "serviceParameter" : "product",
+    "multivalued" : false,
+    "parameterName" : "product",
+    "valueRequired" : true
+  }, {
+    "serviceParameter" : "sanctionamount",
+    "multivalued" : false,
+    "parameterName" : "sanctionamount",
+    "valueRequired" : true
+  } ],
+  "pathParameters" : [ "loanid" ],
+  "roles" : [ ],
+  "returnedVariableName" : "result",
+  "serializeResult" : false,
+  "contentType" : "application/json",
+  "basePath" : "myproduct_3",
+  "path" : "/{loanid}",
+  "pool" : {
+    "usePool" : false
+  }
+}

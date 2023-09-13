@@ -1,0 +1,12 @@
+{
+  "code" : "Product",
+  "name" : "Product",
+  "description" : "Product",
+  "customEntityCategoryCode" : "productmanagement",
+  "availableStorages" : [ "SQL" ],
+  "sqlStorageConfiguration" : {
+    "storeAsTable" : true
+  },
+  "samples" : [ ],
+  "audited" : false
+}

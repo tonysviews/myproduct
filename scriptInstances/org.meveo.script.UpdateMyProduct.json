@@ -1,0 +1,21 @@
+{
+  "code" : "org.meveo.script.UpdateMyProduct",
+  "inputs" : [ {
+    "name" : "uuid",
+    "type" : "String"
+  }, {
+    "name" : "product",
+    "type" : "Product"
+  } ],
+  "outputs" : [ {
+    "name" : "result",
+    "type" : "String"
+  } ],
+  "generateOutputs" : false,
+  "type" : "JAVA",
+  "transactionType" : "SAME",
+  "executionRoles" : [ ],
+  "sourcingRoles" : [ ],
+  "mavenDependencies" : [ ],
+  "importScriptInstances" : [ ]
+}

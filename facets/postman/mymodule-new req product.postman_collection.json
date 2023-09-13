@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "6e0c2df6-41fd-4a31-af29-5add3a09be2e",
+		"name": "mymodule-new req product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29352754"
+	},
+	"item": [
+		{
+			"name": "savedoubleproductloanrs",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t  \r\n\t  \"loanaccount\":\r\n        { \r\n            \"uuid\":\"200\",\r\n            \"loanid\": \"102\",\r\n            \"loanaccountname\": \"Northern university mymodule\",\r\n            \"sanctionamount\": \"612\"\r\n\t   \r\n        },\r\n   \r\n        \"product\":\r\n        { \r\n             \"uuid\":\"150\",\r\n            \"proid\": \"102\",\r\n            \"proname\": \"Northern university mymodule\",\r\n            \"proprice\": \"612\"\r\n\t   \r\n        }\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/myproduct/api/myproduct_1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myproduct",
+						"api",
+						"myproduct_1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save DoubleProductFieldsRS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\r\n        \"product\":\r\n        { \r\n             \"uuid\":\"150\",\r\n            \"proid\": \"102\",\r\n            \"proname\": \"Northern university mymodule\",\r\n            \"proprice\": \"612\"\r\n\t   \r\n        },\r\n        \"loanid\":\"101\",\r\n        \"loanaccountname\":\"gulamsamdani\",\r\n        \"sanctionamount\":\"52630\"\r\n        \r\n\r\n\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/myproduct/api/myproduct_2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myproduct",
+						"api",
+						"myproduct_2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save DobuleProductRS body",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\r\n        \"product\":\r\n        { \r\n             \"uuid\":\"150\",\r\n            \"proid\": \"102\",\r\n            \"proname\": \"Northern university mymodule\",\r\n            \"proprice\": \"612\"\r\n\t   \r\n        },\r\n        \"loanaccountname\":\"gulamsamdani\",\r\n        \"sanctionamount\":\"52630\"\r\n        \r\n\r\n\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/meveo/rest/myproduct_3/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"meveo",
+						"rest",
+						"myproduct_3",
+						"101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save list of product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \r\n    \"products\" : [{\r\n        \"uuid\"    : \"147\",\r\n        \"proid\"   : \"value100\",\r\n        \"proname\" : \"value1000\",\r\n        \"proprice\": \"value10000\"\r\n        \r\n    }, \r\n    {\r\n        \"uuid\"    : \"158\",\r\n        \"proid\"   : \"value200\",\r\n        \"proname\" : \"value2000\",\r\n        \"proprice\": \"value20000\"\r\n    }]\r\n   \r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/myproduct/api/myproduct_5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myproduct",
+						"api",
+						"myproduct_5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProductQueryRS",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/myproduct/api/myproduct_4/150?loanid=102",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"myproduct",
+						"api",
+						"myproduct_4",
+						"150"
+					],
+					"query": [
+						{
+							"key": "loanid",
+							"value": "102"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

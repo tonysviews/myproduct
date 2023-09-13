@@ -1,0 +1,43 @@
+{
+    "storages": ["SQL"],
+    "default": "Product",
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "id": "Product",
+    "title": "Product",
+    "type": "object",
+    "properties": {
+        "proid": {
+            "storages": ["SQL"],
+            "nullable": true,
+            "description": "proid",
+            "readOnly": false,
+            "versionable": false,
+            "id": "CE_Product_proid",
+            "title": "Product.proid",
+            "type": "string",
+            "maxLength": 255
+        },
+        "proname": {
+            "storages": ["SQL"],
+            "nullable": true,
+            "description": "proname",
+            "readOnly": false,
+            "versionable": false,
+            "id": "CE_Product_proname",
+            "title": "Product.proname",
+            "type": "string",
+            "maxLength": 255
+        },
+        "proprice": {
+            "storages": ["SQL"],
+            "nullable": true,
+            "description": "proprice",
+            "readOnly": false,
+            "versionable": false,
+            "id": "CE_Product_proprice",
+            "title": "Product.proprice",
+            "type": "string",
+            "maxLength": 255
+        }
+    }
+}

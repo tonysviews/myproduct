@@ -1,0 +1,20 @@
+{
+  "code" : "DeleteproductRS",
+  "description" : "delete a new product",
+  "secured" : false,
+  "checkPathParams" : false,
+  "serviceCode" : "org.meveo.script.DeleteMyProduct",
+  "synchronous" : true,
+  "method" : "DELETE",
+  "parameterMappings" : [ ],
+  "pathParameters" : [ "uuid" ],
+  "roles" : [ ],
+  "returnedVariableName" : "result",
+  "serializeResult" : false,
+  "contentType" : "application/json",
+  "basePath" : "myproduct",
+  "path" : "/{uuid}",
+  "pool" : {
+    "usePool" : false
+  }
+}

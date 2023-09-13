@@ -1,0 +1,40 @@
+{
+  "code" : "DoubleProductFieldsRS",
+  "description" : "Double Product with Fields",
+  "secured" : false,
+  "checkPathParams" : false,
+  "serviceCode" : "org.meveo.script.CreateDoubleProductFields",
+  "synchronous" : true,
+  "method" : "POST",
+  "parameterMappings" : [ {
+    "serviceParameter" : "loanaccountname",
+    "multivalued" : false,
+    "parameterName" : "loanaccountname",
+    "valueRequired" : true
+  }, {
+    "serviceParameter" : "loanid",
+    "multivalued" : false,
+    "parameterName" : "loanid",
+    "valueRequired" : true
+  }, {
+    "serviceParameter" : "product",
+    "multivalued" : false,
+    "parameterName" : "product",
+    "valueRequired" : true
+  }, {
+    "serviceParameter" : "sanctionamount",
+    "multivalued" : false,
+    "parameterName" : "sanctionamount",
+    "valueRequired" : true
+  } ],
+  "pathParameters" : [ ],
+  "roles" : [ ],
+  "returnedVariableName" : "result",
+  "serializeResult" : false,
+  "contentType" : "application/json",
+  "basePath" : "myproduct_2",
+  "path" : "/",
+  "pool" : {
+    "usePool" : false
+  }
+}

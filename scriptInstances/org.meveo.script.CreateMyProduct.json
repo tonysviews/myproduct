@@ -1,0 +1,18 @@
+{
+  "code" : "org.meveo.script.CreateMyProduct",
+  "inputs" : [ {
+    "name" : "product",
+    "type" : "Product"
+  } ],
+  "outputs" : [ {
+    "name" : "result",
+    "type" : "String"
+  } ],
+  "generateOutputs" : false,
+  "type" : "JAVA",
+  "transactionType" : "SAME",
+  "executionRoles" : [ ],
+  "sourcingRoles" : [ ],
+  "mavenDependencies" : [ ],
+  "importScriptInstances" : [ ]
+}

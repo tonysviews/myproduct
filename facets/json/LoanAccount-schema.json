@@ -1,0 +1,42 @@
+{
+    "storages": ["SQL"],
+    "default": "LoanAccount",
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "id": "LoanAccount",
+    "title": "LoanAccount",
+    "type": "object",
+    "properties": {
+        "loanaccountname": {
+            "storages": ["SQL"],
+            "nullable": true,
+            "description": "loanaccountname",
+            "readOnly": false,
+            "versionable": false,
+            "id": "CE_LoanAccount_loanaccountname",
+            "title": "LoanAccount.loanaccountname",
+            "type": "string",
+            "maxLength": 255
+        },
+        "loanid": {
+            "storages": ["SQL"],
+            "nullable": true,
+            "description": "loanid",
+            "readOnly": false,
+            "versionable": false,
+            "id": "CE_LoanAccount_loanid",
+            "title": "LoanAccount.loanid",
+            "type": "string",
+            "maxLength": 255
+        },
+        "sanctionamount": {
+            "storages": ["SQL"],
+            "nullable": true,
+            "description": "sanctionamount",
+            "readOnly": false,
+            "versionable": false,
+            "id": "CE_LoanAccount_sanctionamount",
+            "title": "LoanAccount.sanctionamount",
+            "type": "number"
+        }
+    }
+}

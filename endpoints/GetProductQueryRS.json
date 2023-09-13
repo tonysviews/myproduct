@@ -1,0 +1,25 @@
+{
+  "code" : "GetProductQueryRS",
+  "description" : "Get  Product  Query RS",
+  "secured" : false,
+  "checkPathParams" : false,
+  "serviceCode" : "org.meveo.script.GetProductforBothQandP",
+  "synchronous" : true,
+  "method" : "GET",
+  "parameterMappings" : [ {
+    "serviceParameter" : "loanid",
+    "multivalued" : false,
+    "parameterName" : "loanid",
+    "valueRequired" : false
+  } ],
+  "pathParameters" : [ "uuid" ],
+  "roles" : [ ],
+  "returnedVariableName" : "result",
+  "serializeResult" : false,
+  "contentType" : "application/json",
+  "basePath" : "myproduct_4",
+  "path" : "/{uuid}",
+  "pool" : {
+    "usePool" : false
+  }
+}
